@@ -1,5 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.gif' -print0 | \
-xargs -0 -I{} sh -c 'f="{}"; f="${f##*/}"; echo "${f%.gif}"' | \
-sort -f
-echo
+find . -type f -iname '*.gif' -print0 | xargs -0 -n1 echo | tr ' ' '\n' | rev | cut -c5- | rev | sort -f
