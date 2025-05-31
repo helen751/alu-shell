@@ -1,0 +1,6 @@
+#!/bin/bash
+tail -n +2 | \
+awk '{counts[$1]++} END {for (h in counts) print counts[h], h}' | \
+sort -k1,1nr -k2,2 | \
+head -11 | \
+awk '{print $2}'
