@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((5#$(tr -dc 'ewatr' <<< "$WATER" | tr 'ewatr' '01234') + 4#$(tr -dc 'tir.' <<< "$STIR" | tr 'tir.' '0123'))) | tr '01234567' 'bestchol'
+echo $(( $(echo "$WATER" | tr 'ewatir' '012345') + $(echo "$STIR" | tr 'tirwea' '012345') )) | tr '0123456789' 'shtbeolhc'
