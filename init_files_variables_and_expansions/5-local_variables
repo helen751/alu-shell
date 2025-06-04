@@ -1,2 +1,2 @@
-#!/bin/bash
-{ declare -p & declare -f } | sort
+!/bin/bash
+declare -p | sort && declare -f | sort | cat
