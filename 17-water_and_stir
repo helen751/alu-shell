@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(( $(tr -d 'ewatr' <<< "$WATER" | wc -c) + $(tr -d 'ti.r' <<< "$STIR" | wc -c) )) | tr '0123456789' 'bestchol'
