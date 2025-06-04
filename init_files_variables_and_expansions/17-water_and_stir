@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((5#$(grep -o '[ewatr]'<<<"$WATER"|tr 'ewatr' '01234'|tr -d '\n')+4#$(grep -o '[ti.r]'<<<"$STIR"|tr 'ti.r' '0123'|tr -d '\n')))|tr '01234567' 'bestchol'
+echo $((5#$(grep -o '[ewatr]'<<<"$WATER"|tr 'water' '01234'|tr -d '\n')+4#$(grep -o '[tir.]'<<<"$STIR"|tr 'stir' '0123'|tr -d '\n')))|tr '01234567' 'bestchol'
