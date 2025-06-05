@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | sort && declare -f | sort | cat
+compgen -A variable -A function
